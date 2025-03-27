@@ -23,3 +23,7 @@ The vision of this project is to create a decentralized and transparent system f
 1. **Enroll in a Course:** Students enroll by calling the `enroll` function.
 2. **Reward Distribution:** Admin rewards students upon course completion using the `reward_student` function.
 
+
+![image](https://github.com/user-attachments/assets/5d36a90f-4496-43a7-9875-db054c431df6)
+
+
