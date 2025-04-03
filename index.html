@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenized Course Rewards</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@petra/core@latest/dist/index.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Tokenized Course Rewards</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <button id="connectWallet" class="connect-btn">Connect Wallet</button>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Earn Rewards for Your Learning Journey</h1>
+                <p>Tokenize your course completion and get rewarded for your achievements</p>
+                <div class="hero-buttons">
+                    <button class="cta-button">Get Started</button>
+                    <button class="secondary-button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2>Available Courses</h2>
+            <div class="course-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Blockchain</button>
+                <button class="filter-btn">Web Development</button>
+                <button class="filter-btn">Data Science</button>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Introduction to Blockchain</h3>
+                    <p>Learn the fundamentals of blockchain technology</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 4 weeks</span>
+                        <span><i class="fas fa-coins"></i> 50 TCR</span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <!-- More course cards will be added dynamically -->
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard">
+            <h2>Your Learning Dashboard</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Completed Courses</h3>
+                    <p id="completedCourses">0</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Total Rewards</h3>
+                    <p id="totalRewards">0 TCR</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Achievements</h3>
+                    <p id="achievements">0</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Learning Streak</h3>
+                    <p id="learningStreak">0 days</p>
+                </div>
+            </div>
+            <div class="progress-section">
+                <h3>Your Progress</h3>
+                <div class="progress-bars">
+                    <!-- Progress bars will be added dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="rewards" class="rewards">
+            <h2>Claim Your Rewards</h2>
+            <div class="rewards-container">
+                <div class="reward-card">
+                    <h3>Course Completion Reward</h3>
+                    <p>Complete a course to earn tokens</p>
+                    <div class="reward-amount">
+                        <i class="fas fa-coins"></i>
+                        <span>50 TCR</span>
+                    </div>
+                    <button class="claim-btn" id="claimReward">Claim Reward</button>
+                </div>
+                <div class="reward-card">
+                    <h3>Referral Bonus</h3>
+                    <p>Invite friends to earn extra tokens</p>
+                    <div class="reward-amount">
+                        <i class="fas fa-coins"></i>
+                        <span>25 TCR</span>
+                    </div>
+                    <button class="claim-btn" id="claimReferral">Claim Referral</button>
+                </div>
+                <div class="reward-card">
+                    <h3>Learning Streak Bonus</h3>
+                    <p>Maintain your learning streak</p>
+                    <div class="reward-amount">
+                        <i class="fas fa-coins"></i>
+                        <span>10 TCR/day</span>
+                    </div>
+                    <button class="claim-btn" id="claimStreak">Claim Streak</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="leaderboard">
+            <h2>Top Learners</h2>
+            <div class="leaderboard-container">
+                <div class="leaderboard-header">
+                    <span>Rank</span>
+                    <span>User</span>
+                    <span>Points</span>
+                    <span>Rewards</span>
+                </div>
+                <div class="leaderboard-content">
+                    <!-- Leaderboard entries will be added dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Tokenized Course Rewards is a platform that incentivizes learning through blockchain technology.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#rewards">Rewards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> support@tokenizedrewards.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tokenized Course Rewards. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 
